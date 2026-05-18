@@ -1,0 +1,246 @@
+/* إعادة تهيئة وإعدادات الخطوط والألوان العامة */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* ترويسة الموقع (الهيدر) */
+.main-header {
+    background: linear-gradient(135deg, #0f2b46 0%, #1a4a75 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 0 40px 0;
+    border-bottom: 5px solid #a3e635;
+}
+
+.main-header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #a3e635;
+}
+
+.main-header .tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* بطاقات الإحصائيات */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #1a4a75;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: #1a4a75;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+}
+
+/* الأقسام ومجموعات الروابط */
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    color: #0f2b46;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #a3e635;
+}
+
+/* الأوسمة والتاغات الملونة - فئات الاستضافة */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag-link {
+    text-decoration: none;
+    color: #1a4a75;
+    background-color: #ebf3fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tag-link:hover {
+    background-color: #1a4a75;
+    color: #fff;
+}
+
+.tag-link.cat-free { background-color: #fef08a; color: #854d0e; }
+.tag-link.cat-free:hover { background-color: #854d0e; color: #fff; }
+.tag-link.cat-wp { background-color: #e0f2fe; color: #0369a1; }
+.tag-link.cat-wp:hover { background-color: #0369a1; color: #fff; }
+
+/* شبكة روابط المقالات والمراجعات (Dofollow) */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.list-item-link {
+    display: block;
+    text-decoration: none;
+    color: #4b5563;
+    padding: 12px 15px;
+    background-color: #fafafa;
+    border-right: 4px solid #cbd5e1;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.list-item-link:hover {
+    color: #1a4a75;
+    background-color: #f1f5f9;
+    border-right-color: #1a4a75;
+    padding-right: 20px;
+}
+
+/* تمييز روابط المنتجات الرقمية داخل المتجر */
+.list-item-link.prod-item {
+    border-right-color: #10b981;
+}
+.list-item-link.prod-item:hover {
+    border-right-color: #047857;
+    color: #047857;
+}
+
+.list-item-link.prod-wp {
+    border-right-color: #8b5cf6;
+}
+.list-item-link.prod-wp:hover {
+    border-right-color: #6d28d9;
+    color: #6d28d9;
+}
+
+/* فئات المتجر الرقمي */
+.shop-categories {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.shop-cat-badge {
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    background-color: #f3f4f6;
+    border-radius: 4px;
+    color: #374151;
+}
+
+/* شبكة روابط الصفحات على شكل كروت */
+.pages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.page-link-card {
+    text-decoration: none;
+    background-color: #fff;
+    color: #1a4a75;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.page-link-card:hover {
+    background-color: #1a4a75;
+    color: #fff;
+    border-color: #1a4a75;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* تذييل الموقع (الفوتير) */
+.main-footer {
+    background-color: #0f2b46;
+    color: #9ca3af;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    border-top: 4px solid #1a4a75;
+}
+
+.main-footer a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.main-footer a:hover {
+    color: #a3e635;
+}
+
+/* الاستجابة والتوافق مع الشاشات الصغيرة لجعلها مرنة للغاية */
+@media (max-width: 768px) {
+    .main-header .logo { font-size: 2rem; }
+    .content-section { padding: 20px; }
+    .links-grid { grid-template-columns: 1fr; }
+    .shop-categories { flex-direction: column; gap: 5px; }
+}
