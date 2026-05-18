@@ -244,3 +244,9 @@ body {
     .links-grid { grid-template-columns: 1fr; }
     .shop-categories { flex-direction: column; gap: 5px; }
 }
+.loader-text {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    padding: 10px;
+}
